@@ -149,7 +149,7 @@ figcaption {
   position: relative;
   display: flex;
   overflow: hidden;
-  padding: 128px 6% 128px;
+  padding: 128px 6% 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
