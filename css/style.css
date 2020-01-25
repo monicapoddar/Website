@@ -145,6 +145,17 @@ figcaption {
   line-height: 24px;
 }
 
+.section-systems {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 128px 6% 128px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
 .section {
   position: relative;
   display: -webkit-box;
@@ -595,6 +606,19 @@ figcaption {
   padding-top: 0px;
 }
 
+.nav-name {
+  position: static;
+  display: inline;
+  padding: 12px 14px;
+  font-family: Oswald, sans-serif;
+  color: #111;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  float: left;
+}
+
 .nav-link {
   position: static;
   display: inline;
@@ -609,6 +633,10 @@ figcaption {
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.nav-link.float-right {
+  float: right;
 }
 
 .nav-link:hover {
@@ -3929,6 +3957,35 @@ figcaption {
   color: #777;
 }
 
+.layouts-systems {
+  display: flex;
+  max-width: 100%;
+  margin-top: 32px;
+  margin-bottom: -64px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.layout-systems {
+  flex: 1 0 600px;
+  max-width: 600px;
+  padding: 16px 8% 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-header-systems {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .layouts {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3967,6 +4024,10 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.layout.full {
+  width: 100%;
 }
 
 .layout-header {
@@ -6163,6 +6224,11 @@ figcaption {
 
 .paragraph-2 {
   color: #777;
+}
+
+.paragraph-2.large {
+  color: #777;
+  font-size: 20px;
 }
 
 .image-9 {
