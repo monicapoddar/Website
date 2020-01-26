@@ -6577,6 +6577,9 @@ figcaption {
     line-height: 32px;
     margin-bottom: 20px;
   }
+  .section-systems {
+    padding: 80px 3%;
+  }
   .section {
     padding: 80px 3%;
   }
@@ -7311,6 +7314,9 @@ figcaption {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+  }
+  .layouts-systems {
+    margin-bottom: -40px;
   }
   .layouts {
     margin-bottom: -40px;
@@ -8213,6 +8219,11 @@ figcaption {
 }
 
 @media (max-width: 479px) {
+  .section-systems {
+    overflow: visible;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .section {
     overflow: visible;
     padding-top: 40px;
@@ -8618,6 +8629,9 @@ figcaption {
   .intro-page-hero {
     padding-right: 8%;
     padding-left: 8%;
+  }
+  .layouts-systems {
+    margin-top: 32px;
   }
   .layouts {
     margin-top: 32px;
