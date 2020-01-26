@@ -3965,7 +3965,7 @@ figcaption {
 }
 
 .layout-systems {
-  flex: 1 0 600px;
+  flex: 1 1 600px;
   max-width: 600px;
   padding: 16px 8% 60px;
   justify-content: center;
