@@ -1,9 +1,6 @@
 // Loaded via <script> tag, create shortcut to access PDF.js exports.
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
 
-var scale = 1.5;
-var viewport = page.getViewport({scale: scale});
-
 // The workerSrc property shall be specified.
 //pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.com/libraries/pdf.js/build/pdf.worker.js';
 
@@ -22,6 +19,8 @@ function renderPDF(name) {
     console.log('Page loaded');
 
     // Prepare canvas using PDF page dimensions
+    var scale = 1.5;
+    var viewport = page.getViewport({scale: scale});
     
     var context = canvas.getContext('2d');
     canvas.height = viewport.height;
