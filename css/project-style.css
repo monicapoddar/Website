@@ -710,6 +710,7 @@
   margin-top: 40px;
   border: 1px solid black;
   direction: ltr;
+  cursor: pointer;
 }
 
 @media (max-width: 1234px) {
