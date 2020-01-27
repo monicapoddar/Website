@@ -43,7 +43,7 @@
     <link href="img/5c275c221110ecf97b0241d1_webclip.png"
           rel="apple-touch-icon"/>
 </head>
-<body class="body">
+<body class="body" onload="renderPDFs(['pdf-canvas'])">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D4XDZ5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -70,7 +70,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="title-text title-text-portal">WEEK 1</div>
     <div class="title-heading systems">VISUAL SYSTEMS | COINS</div>
     <p class="title-paragraph wider">Description goes here.</p>
-    <canvas id="pdf-canvas" data-url="../resources/resume.pdf"></canvas>
+    <canvas id="pdf-canvas" data-url="../resources/resume.pdf" onclick="download_pdf('resources/resume.pdf', 'asiggnment1.pdf')">
+    </canvas>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"
