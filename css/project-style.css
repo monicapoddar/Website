@@ -98,6 +98,11 @@
   margin-top: 50px;
   margin-bottom: 20px;
 }
+.title-heading.systems {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
 .title-paragraph {
   /*width: 534px;*/
   /*height: 52px;*/
@@ -702,7 +707,7 @@
 #behance {}
 #pdf-canvas {
   position: relative;
-  margin-top: 20px;
+  margin-top: 40px;
   border: 1px solid black;
   direction: ltr;
 }
