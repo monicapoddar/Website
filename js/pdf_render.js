@@ -5,6 +5,7 @@ var pdfjsLib = window['pdfjs-dist/build/pdf'];
 //pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.com/libraries/pdf.js/build/pdf.worker.js';
 
 function renderPDF(name) {
+  console.log('Element name: ' + name)
   var canvas = document.getElementById(name);
   var url = canvas.dataset.url
   
@@ -43,8 +44,9 @@ function renderPDF(name) {
 };
 
 function renderPDFs(elems) {
+  console.log(elems)
   for (i = 0; i < elems.length; i++) {
-    renderPDF(i);
+    renderPDF(elems[i]);
   }
 };
 
