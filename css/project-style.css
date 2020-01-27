@@ -700,6 +700,12 @@
 #instagram {}
 #linkedin {}
 #behance {}
+#pdf-canvas {
+  position: relative;
+  margin-top: 20px;
+  border: 1px solid black;
+  direction: ltr;
+}
 
 @media (max-width: 1234px) {
 	.gradient-box-2-text-2 {
