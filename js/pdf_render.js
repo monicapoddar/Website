@@ -5,7 +5,7 @@ var url = canvas.dataset.url
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
 
 // The workerSrc property shall be specified.
-pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
+//pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.com/libraries/pdf.js/build/pdf.worker.js';
 
 // Asynchronous download of PDF
 var loadingTask = pdfjsLib.getDocument(url);
