@@ -117,6 +117,9 @@
   color: #1c1d24;
   margin: 20px 22.75% 0px;
 }
+.title-paragraph.systems {
+  font-weight: 500;
+}
 .title-paragraph.wide {
 	margin-left: 15%;
 	margin-right: 15%;
