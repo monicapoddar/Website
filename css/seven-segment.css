@@ -1,7 +1,7 @@
 svg {
     /* border: tomato solid 3px; */
     width: 100%;
-    height: 250px;
+    height: 150px;
 }
 
 #display-all {
@@ -14,7 +14,7 @@ svg {
     letter-spacing: normal;
     text-align: center;
     color: #1c1d24;
-    margin-bottom: 41px;
+    margin-bottom: 54px;
 }
 
 svg #shape-all path {
