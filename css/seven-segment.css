@@ -126,10 +126,12 @@ svg #shape-base-3-num path {
     opacity: 0;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
+    fill: firebrick;
 }
 
 svg #shape-base-3-num path.transit {
-    opacity: 0.5;
+    opacity: 1;
+    fill: darkolivegreen;
 }
 
 svg #shape-base-3-num path.active {
