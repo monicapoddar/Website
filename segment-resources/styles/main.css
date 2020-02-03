@@ -1,17 +1,19 @@
-body {
-  background: #f1f1f2;
-  box-shadow: inset 0 0 10em 2em #bcbcc1;
-  display: block;
-  margin: 0;
-  height: 100vh;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  color: #404041;
-  pointer-events: none; }
+/* body {
+    background: #f1f1f2;
+    box-shadow: inset 0 0 10em 2em #bcbcc1;
+    display: block;
+    margin: 0;
+    height: 100vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #404041;
+    pointer-events: none;
+} */
 
-h1, svg {
+
+/* h1, svg {
   position: absolute;
   width: 250px;
   top: 40%;
@@ -39,4 +41,148 @@ svg {
     svg #shape polygon.active {
       opacity: 1; }
   svg > polygon {
-    fill: #d7d7d9; }
+    fill: #d7d7d9; } */
+
+svg {
+    /* border: tomato solid 3px; */
+    width: 100%;
+    height: 300px;
+    margin-top: 170px;
+}
+
+#display-all {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1c1d24;
+    margin-bottom: 190px;
+}
+
+svg #shape-all path {
+    /* stroke: #f1f1f2;
+      stroke-width: 1; */
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+svg #shape-all path.active {
+    opacity: 1;
+}
+
+svg #shape-all rect {
+    /* stroke: #f1f1f2;
+      stroke-width: 1; */
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+svg #shape-all rect.active {
+    opacity: 1;
+}
+
+#display-num {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1c1d24;
+    margin-bottom: 190px;
+}
+
+svg #shape-num path {
+    /* stroke: #f1f1f2;
+      stroke-width: 1; */
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+svg #shape-num path.active {
+    opacity: 1;
+}
+
+svg #shape-num rect {
+    /* stroke: #f1f1f2;
+      stroke-width: 1; */
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+svg #shape-num rect.active {
+    opacity: 1;
+}
+
+#display-all-3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1c1d24;
+    margin-bottom: 190px;
+}
+
+svg #shape-base-3-all path {
+    /* stroke: #f1f1f2;
+      stroke-width: 1; */
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+svg #shape-base-3-all path.transit {
+    opacity: 0.5;
+}
+
+svg #shape-base-3-all path.active {
+    opacity: 1;
+}
+
+#display-num-3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1c1d24;
+    margin-bottom: 190px;
+}
+
+svg #shape-base-3-num path {
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    /* fill: firebrick; */
+}
+
+svg #shape-base-3-num path.transit {
+    opacity: 0.5;
+    /* opacity: 1;
+      fill: darkolivegreen; */
+}
+
+svg #shape-base-3-num path.active {
+    opacity: 1;
+}
+
+svg>polygon {
+    fill: #d7d7d9;
+}
