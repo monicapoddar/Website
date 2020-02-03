@@ -2,6 +2,7 @@ svg {
     /* border: tomato solid 3px; */
     width: 100%;
     height: 300px;
+    margin-top: 40px;
 }
 
 #display-all {
