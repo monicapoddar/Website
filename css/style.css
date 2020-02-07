@@ -315,7 +315,7 @@ html.w-mod-touch * {
 
 .w-flex {
     max-width: 100%;
-    width: 150px;
+    width: 149px;
     display: flex;
 }
 
@@ -8941,6 +8941,9 @@ figcaption {
     }
     .hero-split-intro {
         padding-top: 80px;
+    }
+    .w-flex {
+        margin-top: 24px;
     }
     .contact {
         position: static;
