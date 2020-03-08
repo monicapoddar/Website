@@ -61,3 +61,14 @@ var chart = new OrgChart(document.getElementById("familytree"), {
         photo: "resources/assignments/reading1-logo-386.jpg"
     }]
 });
+
+/* Open when someone clicks on the span element */
+function openNav(id) {
+    console.log(id);
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
