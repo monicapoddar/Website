@@ -20,9 +20,9 @@ var chart = new OrgChart(document.getElementById("familytree"), {
     },
     nodes: [{
         id: 1,
+        photo: "resources/assignments/reading1-logo-386.jpg",
         name: "Poddar Monica",
-        period: "1994 - Present",
-        photo: "resources/assignments/reading1-logo-386.jpg"
+        period: "1994 - Present"
     }, {
         id: 2,
         pid: 1,
@@ -44,7 +44,7 @@ var chart = new OrgChart(document.getElementById("familytree"), {
     }, {
         id: 5,
         pid: 2,
-        name: "Poddar Dulai",
+        name: "Poddar Dulali",
         period: "1923 - 2013",
         photo: "resources/assignments/reading1-logo-386.jpg"
     }, {
