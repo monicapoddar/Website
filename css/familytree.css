@@ -30,13 +30,13 @@
 
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 650px;
+    height: 798px;
     width: 0;
     position: fixed;
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    left: 30%;
+    left: 0;
     top: 0;
     background-color: rgb(0, 0, 0);
     /* Black fallback color */
@@ -55,12 +55,12 @@
     position: relative;
     top: 10%;
     /* 25% from the top */
-    width: 75%;
+    width: 30%;
     /* 100% width */
     text-align: center;
-    margin-left: 12.5%;
+    margin-left: 35%;
     /* Centered text/links */
-    margin-top: 60px;
+    margin-top: 120px;
     /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
