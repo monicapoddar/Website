@@ -23,3 +23,29 @@ function openNav(id) {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+
+function showLines(id) {
+    console.log(id);
+    if (id == "poddar-dulali-time") {
+        document.getElementById("poddar-dulali-line-1").setAttribute("stroke-width", 3);
+        document.getElementById("poddar-dulali-line-2").setAttribute("stroke-width", 3);
+        document.getElementById("1937").setAttribute("font-size", 18);
+        document.getElementById("1965").setAttribute("font-size", 18);
+    } else if (id == "poddar-indrani-time") {
+        document.getElementById("poddar-indrani-line-1").setAttribute("stroke-width", 3);
+        document.getElementById("1945").setAttribute("font-size", 18);
+    }
+}
+
+function hideLines(id) {
+    console.log(id);
+    if (id == "poddar-dulali-time") {
+        document.getElementById("poddar-dulali-line-1").setAttribute("stroke-width", 0);
+        document.getElementById("poddar-dulali-line-2").setAttribute("stroke-width", 0);
+        document.getElementById("1937").setAttribute("font-size", 0);
+        document.getElementById("1965").setAttribute("font-size", 0);
+    } else if (id == "poddar-indrani-time") {
+        document.getElementById("poddar-indrani-line-1").setAttribute("stroke-width", 0);
+        document.getElementById("1945").setAttribute("font-size", 0);
+    }
+}
