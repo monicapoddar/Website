@@ -25,13 +25,20 @@ var table = new Tabulator("#example-table", {
     data: tabledata, //assign data to table
     layout: "fitColumns", //fit columns to width of table (optional)
     columns: [ //Define Table Columns
-        { title: "LAST NAME", field: "lname", sorter: "string", align: "left", width: 152 },
-        { title: "FIRST NAME", field: "fname", sorter: "string", align: "left", width: 152 },
-        { title: "GENERATION", field: "gen", sorter: "number", align: "left", width: 152 },
-        { title: "RELATION", field: "rel", sorter: "string", align: "left", width: 218 },
-        { title: "YEAR OF BIRTH", field: "yob", sorter: "number", align: "left", width: 152 },
-        { title: "YEAR OF DEATH", field: "yod", sorter: "number", align: "left", width: 152 },
-        { title: "LOCATION", field: "loc", sorter: "string", align: "left", width: 162 }
+        // { title: "LAST NAME", field: "lname", sorter: "string", align: "left", width: 152 },
+        // { title: "FIRST NAME", field: "fname", sorter: "string", align: "left", width: 152 },
+        // { title: "GENERATION", field: "gen", sorter: "number", align: "left", width: 152 },
+        // { title: "RELATION", field: "rel", sorter: "string", align: "left", width: 218 },
+        // { title: "YEAR OF BIRTH", field: "yob", sorter: "number", align: "left", width: 152 },
+        // { title: "YEAR OF DEATH", field: "yod", sorter: "number", align: "left", width: 152 },
+        // { title: "LOCATION", field: "loc", sorer: "string", align: "left", width: 162 }
+        { title: "LAST NAME", field: "lname", sorter: "string", align: "left" },
+        { title: "FIRST NAME", field: "fname", sorter: "string", align: "left" },
+        { title: "GENERATION", field: "gen", sorter: "number", align: "left" },
+        { title: "RELATION", field: "rel", sorter: "string", align: "left" },
+        { title: "YEAR OF BIRTH", field: "yob", sorter: "number", align: "left" },
+        { title: "YEAR OF DEATH", field: "yod", sorter: "number", align: "left" },
+        { title: "LOCATION", field: "loc", sorter: "string", align: "left" }
     ],
     rowClick: function(e, row) { //trigger an alert message when the row is clicked
         alert("Row " + row.getData().id + " Clicked!!!!");
