@@ -21,7 +21,7 @@ var tabledata = [
 //create Tabulator on DOM element with id "example-table"
 var table = new Tabulator("#example-table", {
     height: 550, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
-    width: 1140,
+    //width: 1140,
     data: tabledata, //assign data to table
     layout: "fitColumns", //fit columns to width of table (optional)
     columns: [ //Define Table Columns
@@ -36,6 +36,21 @@ var table = new Tabulator("#example-table", {
     rowClick: function(e, row) { //trigger an alert message when the row is clicked
         alert("Row " + row.getData().id + " Clicked!!!!");
     },
+    // tableBuilt: function() {
+    //     var i;
+    //     const cells = document.getElementsByClassName("tabulator-cell");
+    //     console.log(cells);
+    //     console.log(cells.length);
+    //     console.log(typeof cells);
+    //     console.log(Object.keys(cells));
+    //     //cells[6].style.borderRightWidth = 0;
+    //     for (i = 0; i < cells.length; i++) {
+    //         console.log(cells[i]);
+    //         if (cells[i].getAttribute("tabulator-field") == "loc") {
+    //             cells[i].style.borderRightWidth = 0;
+    //         }
+    //     }
+    // },
 });
 
 

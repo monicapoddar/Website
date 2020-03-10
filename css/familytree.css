@@ -112,6 +112,7 @@
 #example-table {
     background-color: white;
     border: none;
+    margin-bottom: 72px;
 }
 
 #example-table .tabulator-headers {
@@ -189,4 +190,8 @@
 
 .table-controls * {
     display: inline;
+}
+
+#timeline *:hover {
+    filter: brightness(0.5);
 }
