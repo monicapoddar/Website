@@ -39,6 +39,11 @@ var table = new Tabulator("#example-table", {
 });
 
 
+//Custom filter example
+function customFilter(data) {
+    return data.lname;
+}
+
 //Trigger setFilter function with correct parameters
 function updateFilter() {
 
@@ -56,8 +61,8 @@ function updateFilter() {
 }
 
 //Update filters on value change
-// $("#filter-field, #filter-type").change(updateFilter);
-// $("#filter-value").keyup(updateFilter);
+$("#filter-field, #filter-type").change(updateFilter);
+$("#filter-value").keyup(updateFilter);
 
 //Clear filters on "Clear Filters" button click
 $("#filter-clear").click(function() {
