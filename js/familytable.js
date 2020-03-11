@@ -70,6 +70,7 @@ function customFilter(data) {
 function updateFilter() {
 
     var filter = $("#filter-field").val() == "function" ? customFilter : $("#filter-field").val();
+    console.log(filter);
 
     if ($("#filter-field").val() == "function") {
         $("#filter-type").prop("disabled", true);
@@ -93,4 +94,89 @@ $("#filter-clear").click(function() {
     $("#filter-value").val("");
 
     table.clearFilter();
+});
+
+
+
+function updateTimelineFilter() {
+
+    var filter = $("#timeline-filter-field").val() == "function" ? "" : $("#timeline-filter-field").val();
+    console.log(filter);
+    if (filter == "alive") {
+        document.getElementById("poddar-deepak-time").style.display = "none";
+        document.getElementById("poddar-shyamoli-time").style.display = "none";
+        document.getElementById("narayan-nitindra-time").style.display = "none";
+        document.getElementById("devi-kamla-time").style.display = "none";
+        document.getElementById("das-amarendranath-time").style.display = "none";
+        document.getElementById("das-kamalokshi-time").style.display = "none";
+        document.getElementById("roy-bhupendranath-time").style.display = "none";
+        document.getElementById("roy-monica-time").style.display = "none";
+        document.getElementById("poddar-dinesh-time").style.display = "none";
+        document.getElementById("poddar-dulali-time").style.display = "none";
+        document.getElementById("das-ranjan-time").style.display = "none";
+
+        document.getElementById("poddar-indrani-time").style.display = "initial";
+        document.getElementById("das-swapna-time").style.display = "initial";
+        document.getElementById("poddar-kamal-time").style.display = "initial";
+        document.getElementById("poddar-anjana-time").style.display = "initial";
+        document.getElementById("poddar-monica-time").style.display = "initial";
+
+        var arrows = document.getElementsByClassName("alive-arrow");
+        for (let i = 0; i < arrows.length; i++) {
+            arrows[i].style.display = "initial";
+        }
+    } else if (filter == "dead") {
+        document.getElementById("poddar-deepak-time").style.display = "initialinitial";
+        document.getElementById("poddar-shyamoli-time").style.display = "initial";
+        document.getElementById("narayan-nitindra-time").style.display = "initial";
+        document.getElementById("devi-kamla-time").style.display = "initial";
+        document.getElementById("das-amarendranath-time").style.display = "initial";
+        document.getElementById("das-kamalokshi-time").style.display = "initial";
+        document.getElementById("roy-bhupendranath-time").style.display = "initial";
+        document.getElementById("roy-monica-time").style.display = "initial";
+        document.getElementById("poddar-dinesh-time").style.display = "initial";
+        document.getElementById("poddar-dulali-time").style.display = "initial";
+        document.getElementById("das-ranjan-time").style.display = "initial";
+
+        document.getElementById("poddar-indrani-time").style.display = "none";
+        document.getElementById("das-swapna-time").style.display = "none";
+        document.getElementById("poddar-kamal-time").style.display = "none";
+        document.getElementById("poddar-anjana-time").style.display = "none";
+        document.getElementById("poddar-monica-time").style.display = "none";
+
+        var arrows = document.getElementsByClassName("alive-arrow");
+        for (let i = 0; i < arrows.length; i++) {
+            arrows[i].style.display = "none";
+        }
+    } else {
+        document.getElementById("poddar-deepak-time").style.display = "initialinitial";
+        document.getElementById("poddar-shyamoli-time").style.display = "initial";
+        document.getElementById("narayan-nitindra-time").style.display = "initial";
+        document.getElementById("devi-kamla-time").style.display = "initial";
+        document.getElementById("das-amarendranath-time").style.display = "initial";
+        document.getElementById("das-kamalokshi-time").style.display = "initial";
+        document.getElementById("roy-bhupendranath-time").style.display = "initial";
+        document.getElementById("roy-monica-time").style.display = "initial";
+        document.getElementById("poddar-dinesh-time").style.display = "initial";
+        document.getElementById("poddar-dulali-time").style.display = "initial";
+        document.getElementById("das-ranjan-time").style.display = "initial";
+
+        document.getElementById("poddar-indrani-time").style.display = "initial";
+        document.getElementById("das-swapna-time").style.display = "initial";
+        document.getElementById("poddar-kamal-time").style.display = "initial";
+        document.getElementById("poddar-anjana-time").style.display = "initial";
+        document.getElementById("poddar-monica-time").style.display = "initial";
+
+        var arrows = document.getElementsByClassName("alive-arrow");
+        for (let i = 0; i < arrows.length; i++) {
+            arrows[i].style.display = "initial";
+        }
+    }
+}
+
+$("#timeline-filter-field").change(updateTimelineFilter);
+
+$("#timeline-filter-clear").click(function() {
+    $("#timeline-filter-field").val("");
+    updateTimelineFilter();
 });
