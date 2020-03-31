@@ -168,6 +168,20 @@
     text-align: center;
 }
 
+.project-description-3 {
+    width: 100%;
+    margin-top: 42px;
+    text-align: left;
+}
+
+.project-description-3 img {
+    margin-top: 36px;
+    padding-left: 8%;
+    padding-right: 8%;
+    height: auto;
+    text-align: center;
+}
+
 .flex-description {
     display: flex;
     flex-direction: row;
@@ -1054,6 +1068,10 @@
         height: 48px;
     }
     .project-description-2 img {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .project-description-3 img {
         padding-left: 0%;
         padding-right: 0%;
     }
