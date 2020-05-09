@@ -1,0 +1,16 @@
+{
+"companyName": "Monipoo",
+"productName": "DreamRetirement",
+"productVersion": "1",
+"dataUrl": "RetirementHomeWebGL.data.unityweb",
+"wasmCodeUrl": "RetirementHomeWebGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "RetirementHomeWebGL.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.11f1"
+}
